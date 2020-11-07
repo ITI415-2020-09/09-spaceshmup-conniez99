@@ -161,7 +161,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 575735743}
   - component: {fileID: 575735742}
   - component: {fileID: 575735741}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -352,7 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 795836250}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cockpit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 872045207}
   - component: {fileID: 872045206}
   - component: {fileID: 872045205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872045203}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 1371148233}
   - component: {fileID: 1371148232}
   - component: {fileID: 1371148231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,9 +683,9 @@ GameObject:
   - component: {fileID: 1856628773}
   - component: {fileID: 1856628772}
   - component: {fileID: 1856628775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: _Hero
-  m_TagString: Untagged
+  m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -722,7 +722,8 @@ MonoBehaviour:
   rollMult: -45
   pitchMult: 30
   gameRestartDelay: 2
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 1899541879965282, guid: 59a4640edad59f94a87c1d235355cb6a,
+    type: 3}
   projectileSpeed: 40
   weapons: []
   _shieldLevel: 1

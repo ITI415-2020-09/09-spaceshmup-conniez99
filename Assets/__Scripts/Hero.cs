@@ -67,6 +67,18 @@ public class Hero : MonoBehaviour {
         {
             fireDelegate();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TempFire();
+        }
+    }
+
+    void TempFire()
+    {
+        GameObject projGO = Instantiate<GameObject>(projectilePrefab);
+        projGO.transform.position = transform.position;
+        Rigidbody rigidB = projGO.GetComponent<Rigidbody>();
+        rigidB.velocity = Vector3.up * projectileSpeed;
     }
 
     private void OnTriggerEnter(Collider other)
